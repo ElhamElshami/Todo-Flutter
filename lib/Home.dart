@@ -69,6 +69,38 @@ class _HomeLayoutState extends State<HomeLayout> {
                               titleController.text = value!;
                             },
                           ),
+                          TextFormField(
+                            controller: titleController,
+                            decoration: const InputDecoration(
+                              labelText: 'Title',
+                              hintText: 'Enter title',
+                            ),
+                            validator: (String? value){
+                              if(value!.isEmpty){
+                                return 'Please enter title';
+                              }
+                              return null;
+                            },
+                            onSaved: (String? value){
+                              titleController.text = value!;
+                            },
+                          ),
+                          TextFormField(
+                            controller: titleController,
+                            decoration: const InputDecoration(
+                              labelText: 'Title',
+                              hintText: 'Enter title',
+                            ),
+                            validator: (String? value){
+                              if(value!.isEmpty){
+                                return 'Please enter title';
+                              }
+                              return null;
+                            },
+                            onSaved: (String? value){
+                              titleController.text = value!;
+                            },
+                          ),
                         ],
                       ),
                         );
